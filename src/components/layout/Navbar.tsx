@@ -47,7 +47,7 @@ export default function Navbar (): JSX.Element {
       </ul>
 
       <div>
-        <button className="bg-[#00ADEE] py-2.5 px-6 rounded-full text-white hover:bg-blue-500">
+        <button className="border border-solid border-3 rounded-full bg-[#00ADEE] text-white hover:border-[#00ADEE] font-bold hover:text-[#00ADEE] hover:bg-white py-2.5 px-6">
           احجز الآن
         </button>
       </div>

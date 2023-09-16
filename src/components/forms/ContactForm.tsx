@@ -11,7 +11,7 @@ export default function ContactForm (): JSX.Element {
         </label>
         <input id="service" className="border border-solid border-1 w-[100%] p-2 rounded-xl mt-2" type='text' placeholder='اسم الخدمة' />
       </div>
-      <div className='flex'>
+      <div className='flex gap-6'>
         <div className='w-[100%] md:w-[50%]'>
           <div>
             <label htmlFor='name' className='text-xl'>
