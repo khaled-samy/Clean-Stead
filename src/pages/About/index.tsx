@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Container from '../../components/layout/Container'
-import { ImageSection } from '../../components'
+import { Container, ImageSection } from '../../components'
 import groub from '../../assets/Group.png'
 
 export default function About (): JSX.Element {
