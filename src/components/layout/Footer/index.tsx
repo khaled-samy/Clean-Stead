@@ -1,10 +1,10 @@
 import React from 'react'
 import { AiOutlineFacebook, AiOutlineTwitter, AiOutlineYoutube, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineGoogle } from 'react-icons/ai'
-import logo from '../../assets/logo.png'
-import phone from '../../assets/Phone.png'
-import message from '../../assets/Message.png'
-import street from '../../assets/street.png'
-import pin from '../../assets/Pin.png'
+import logo from '../../../assets/logo.png'
+import phone from '../../../assets/Phone.png'
+import message from '../../../assets/Message.png'
+import street from '../../../assets/street.png'
+import pin from '../../../assets/Pin.png'
 
 export default function Footer (): JSX.Element {
   return (
@@ -30,7 +30,7 @@ export default function Footer (): JSX.Element {
 
        {/* Services */}
       <div className='max-w-full md:max-w-[25%]'>
-        <h2 className='font-bold'>خدماتنا</h2>
+        <h2 className='font-bold text-lg'>خدماتنا</h2>
         <ul className='text-[#7D7E82]'>
           <li className='pb-2 pt-4'>تنظيف المنازل</li>
           <li className='pb-2'>التنظيف التجاري</li>
@@ -43,7 +43,7 @@ export default function Footer (): JSX.Element {
 
       {/* Contact */}
       <div className='max-w-full md:max-w-[25%]'>
-        <h2 className='font-bold'>تواصل معنا</h2>
+        <h2 className='font-bold text-lg'>تواصل معنا</h2>
         <div className='flex pt-4 pb-2 text-[#7D7E82]'>
           <img src={phone} alt="phone" />
           <p>0597924632</p>
@@ -56,7 +56,7 @@ export default function Footer (): JSX.Element {
 
       {/* Social Media */}
       <div className='max-w-full md:max-w-[25%]'>
-        <h2 className='font-bold'>تابعونا على</h2>
+        <h2 className='font-bold text-lg'>تابعونا على</h2>
         <div className='flex pt-4 pb-8 text-2xl text-[#7D7E82] gap-3'>
           <AiOutlineFacebook />
           <AiOutlineTwitter />
@@ -78,7 +78,7 @@ export default function Footer (): JSX.Element {
 
     {/* Copyright */}
     <div className='text-center'>
-      <p className='font-bold'>جميع الحقوق محفوظة © 2022 </p>
+      <p className='font-bold text-lg'>جميع الحقوق محفوظة © 2022 </p>
     </div>
     </div>
   )

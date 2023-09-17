@@ -1,12 +1,10 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar, Footer } from './components'
 import { Landing, Services, About, Contact } from './pages'
 
 function App (): any {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route
           path="/"
@@ -25,8 +23,7 @@ function App (): any {
           element={<Contact />}
         />
       </Routes>
-      <Footer />
-    </>
+      </>
   )
 }
 
