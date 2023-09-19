@@ -11,7 +11,7 @@ export default function Header (): JSX.Element {
   }
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+    <div className="flex justify-between items-center h-[50px] mt-[30px] mb-[40px]">
 
       {/* Mobile Menu */}
       <NavMobile nav={nav} handleNav={handleNav}/>

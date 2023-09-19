@@ -7,11 +7,11 @@ import groub from '../../assets/Group.png'
 export default function Contact (): any {
   return (
     <Container>
-    <div className='max-w-[1240px] mx-auto px-4 mb-12 md:flex md:items-center'>
+    <div className='md:flex md:items-center justify-between'>
 
       {/* Contact Information Section */}
-      <div className='w-full md:w-[50%] md:ml-6'>
-        <div className='flex mb-6'>
+      <div className='w-full md:w-[48%]'>
+        <div className='flex mb-[19px]'>
           <h1 className='font-bold text-[40px] pl-2'>تواصل معنا </h1>
           <img className='mt-4' src={groub} alt="groub" />
         </div>

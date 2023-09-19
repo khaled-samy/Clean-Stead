@@ -8,7 +8,7 @@ interface IContainerProps {
 
 export default function Container ({ children }: IContainerProps): JSX.Element {
   return (
-        <div className='Container'>
+        <div className='Container max-w-[1240px] mx-auto px-4'>
         <Header />
         {children}
         <Footer />

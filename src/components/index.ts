@@ -1,4 +1,4 @@
-import { ImageSection } from './cards'
+import { ImageSection, BriefSection } from './cards'
 import Container from './layout/Container'
 
-export { ImageSection, Container }
+export { ImageSection, BriefSection, Container }

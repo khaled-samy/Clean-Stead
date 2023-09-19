@@ -8,7 +8,7 @@ import pin from '../../../assets/Pin.png'
 
 export default function Footer (): JSX.Element {
   return (
-    <div className='bg-[#E5F7FD] max-w-[1240px] mx-auto py-8 px-12 md:px-12 rounded-2xl'>
+    <div className='bg-[#E5F7FD] py-8 px-12 rounded-2xl mt-[55px]'>
 
       {/* Company Info */}
       <div className='flex flex-col md:flex-row justify-around'>
