@@ -1,12 +1,22 @@
 import React from 'react'
 import Container from '../../components/layout/Container'
+import { GreetSection, ServiceSection, AdvantagesSection, OpinionSection } from './components'
 
 export default function Landing (): JSX.Element {
   return (
     <Container>
-    <div className='text-center p-20'>
+    <div className=''>
+      {/* Greeting Section */}
+      <GreetSection />
 
-   <h1 className='text-center text-3xl'>Landing Page</h1>
+      {/* Services Section */}
+      <ServiceSection />
+
+      {/* Advantages Section */}
+      <AdvantagesSection />
+
+      {/* Opinion Section */}
+      <OpinionSection />
     </div>
     </Container>
   )

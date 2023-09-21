@@ -14,7 +14,7 @@ export default function NavMobile ({ nav, handleNav }: INavMobile): JSX.Element 
         {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
 
-      <div className={`fixed right-0 top-0 w-[40%] h-full border-l border-l-gray-900 bg-[#00ADEE] text-white font-bold ease-in-out duration-500 ${nav ? '' : 'right-[-100%]'}`}>
+      <div className={`fixed right-0 top-0 w-[40%] h-full border-l border-l-gray-900 bg-[#00ADEE] text-white font-bold ease-in-out duration-500 z-[2] ${nav ? '' : 'right-[-100%]'}`}>
         <div className="my-10 mr-16 text-2xl" onClick={handleNav}>
           <AiOutlineClose />
         </div>

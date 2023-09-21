@@ -6,3 +6,7 @@ body {
   direction: rtl;
   font-family: 'AvenirArabic', sans-serif;
 }
+
+.custom-shadow {
+  box-shadow: 0 8px 24px 0 rgba(0, 173, 238, 0.1);
+}

@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { NavMobile, NavDesktop } from './components'
 import logo from '../../../assets/logo.png'
 
 export default function Header (): JSX.Element {
   const [nav, setNav] = useState<boolean>(false)
+  const location = useLocation()
 
   const handleNav = (): void => {
     setNav(!nav)
@@ -29,7 +30,12 @@ export default function Header (): JSX.Element {
       {/* Desktop Menu */}
       <NavDesktop />
 
-      <div>
+      <div className='flex gap-2'>
+      {location.pathname === '/' && (
+          <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+            دخول
+          </button>
+      )}
         <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full bg-[#00ADEE] text-white hover:border-[#00ADEE] font-bold hover:text-[#00ADEE] hover:bg-white py-2.5 px-6">
           احجز الآن
         </button>
