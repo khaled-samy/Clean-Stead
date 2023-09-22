@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { RegisterModal } from '../../modals'
 import { NavMobile, NavDesktop } from './components'
 import logo from '../../../assets/logo.png'
 
 export default function Header (): JSX.Element {
   const [nav, setNav] = useState<boolean>(false)
+  const [isModalOpen, setModalOpen] = useState<boolean>(false)
   const location = useLocation()
 
   const handleNav = (): void => {
     setNav(!nav)
+  }
+
+  const handleModal = (): void => {
+    setModalOpen(!isModalOpen)
   }
 
   return (
@@ -32,7 +38,7 @@ export default function Header (): JSX.Element {
 
       <div className='flex gap-2'>
       {location.pathname === '/' && (
-          <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+          <button onClick={handleModal} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
             دخول
           </button>
       )}
@@ -40,6 +46,8 @@ export default function Header (): JSX.Element {
           احجز الآن
         </button>
       </div>
+
+      {isModalOpen && <RegisterModal onClose={handleModal} />}
     </div>
   )
 }

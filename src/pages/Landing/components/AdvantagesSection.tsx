@@ -20,7 +20,7 @@ export default function AdvantagesSection (): JSX.Element {
             </div>
             <div className='text-xl'>
                 <h3 className='font-bold'>{advange.title}</h3>
-                <p>ندرك صعوبة القيام بتنظيف السجاد من قبل النساء</p>
+                <p className='text-[#6D6E71]'>ندرك صعوبة القيام بتنظيف السجاد من قبل النساء</p>
             </div>
         </div>
             ))}

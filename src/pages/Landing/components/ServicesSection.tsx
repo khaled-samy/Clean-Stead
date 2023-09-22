@@ -19,7 +19,7 @@ export default function ServicesSection (): JSX.Element {
             </div>
             <div className='flex w-[320px] mb-6'>
               <div className='border-[1px] border-solid border-[#8FC930] ml-[10px]'></div>
-              <p className='text-xl'>ندرك صعوبة القيام بتنظيف السجاد من قبل النساء في البيوت لأنها تحتاج..</p>
+              <p className='text-xl text-[#6D6E71]'>ندرك صعوبة القيام بتنظيف السجاد من قبل النساء في البيوت لأنها تحتاج..</p>
             </div>
             <div className='text-[#00ADEE] text-lg'>
               <Link to="/services">رؤية المزيد &#9204;</Link>
