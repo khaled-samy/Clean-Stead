@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Landing, Services, About, Contact } from './pages'
+import { Landing, Services, About, Contact, Book } from './pages'
+import RequireAuth from './Auth/RequireAuth'
 
 function App (): any {
   return (
@@ -21,6 +22,10 @@ function App (): any {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+        <Route
+          path="/book"
+          element={<RequireAuth element={<Book />}/> }
         />
       </Routes>
       </>

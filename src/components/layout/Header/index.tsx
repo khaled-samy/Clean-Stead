@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { RegisterModal } from '../../modals'
 import { NavMobile, NavDesktop } from './components'
 import logo from '../../../assets/logo.png'
+import { useAuth } from '../../../Auth/auth'
 
 export default function Header (): JSX.Element {
   const [nav, setNav] = useState<boolean>(false)
-  const [isModalOpen, setModalOpen] = useState<boolean>(false)
-  const location = useLocation()
+  const { isModalOpen, setModalOpen, setErrors, user, logout } = useAuth()
 
   const handleNav = (): void => {
     setNav(!nav)
   }
 
   const handleModal = (): void => {
+    setErrors([])
     setModalOpen(!isModalOpen)
   }
 
@@ -37,13 +38,19 @@ export default function Header (): JSX.Element {
       <NavDesktop />
 
       <div className='flex gap-2'>
-      {location.pathname === '/' && (
-          <button onClick={handleModal} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
-            دخول
-          </button>
-      )}
+        {user === null
+          ? <button onClick={handleModal} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+                  دخول
+                </button>
+          : <button onClick={logout} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+      خروج
+    </button>
+      }
+
         <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full bg-[#00ADEE] text-white hover:border-[#00ADEE] font-bold hover:text-[#00ADEE] hover:bg-white py-2.5 px-6">
+          <Link to='/book'>
           احجز الآن
+          </Link>
         </button>
       </div>
 

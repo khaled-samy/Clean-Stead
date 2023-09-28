@@ -1,6 +1,4 @@
-import GreetSection from './GreetSection'
-import ServiceSection from './ServicesSection'
-import AdvantagesSection from './AdvantagesSection'
-import OpinionSection from './OpinionSection'
-
-export { GreetSection, ServiceSection, AdvantagesSection, OpinionSection }
+export { default as GreetSection } from './GreetSection'
+export { default as ServiceSection } from './ServicesSection'
+export { default as AdvantagesSection } from './AdvantagesSection'
+export { default as OpinionSection } from './OpinionSection'
