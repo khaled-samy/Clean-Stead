@@ -1,4 +1,2 @@
-import ImageSection from './ImageSection'
-import BriefSection from './BriefSection'
-
-export { ImageSection, BriefSection }
+export { default as ImageSection } from './ImageSection'
+export { default as BriefSection } from './BriefSection'

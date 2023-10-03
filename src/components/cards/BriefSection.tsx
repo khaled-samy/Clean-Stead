@@ -14,7 +14,6 @@ export default function BriefSection ({ title, content, buttonText, linkTo }: Br
   return (
 <div className='mb-12 flex flex-col md:flex-row md:justify-between'>
 
-  
       {/* Image Section */}
       <ImageSection />
       <div className='md:w-[50%] md:mt-10'>

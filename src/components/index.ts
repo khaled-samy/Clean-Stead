@@ -1,5 +1,3 @@
-import { ImageSection, BriefSection } from './cards'
-import { RegisterModal } from './modals'
-import Container from './layout/Container'
-
-export { ImageSection, BriefSection, Container, RegisterModal }
+export { ImageSection, BriefSection } from './cards'
+export { RegisterModal } from './modals'
+export { default as Container } from './layout/Container'

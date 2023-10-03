@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Mask } from 'assets'
 
 export default function ImageSection (): JSX.Element {
