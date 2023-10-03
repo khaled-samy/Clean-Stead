@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Landing, Services, About, Contact, Book } from './pages'
-import RequireAuth from './Auth/RequireAuth'
+import { Landing, Services, About, Contact, Book } from 'pages'
+import { RequireAuth } from 'auth'
 
 function App (): any {
   return (

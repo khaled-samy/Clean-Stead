@@ -22,7 +22,7 @@ export const useAuth = (): IAuthContext => {
   return context
 }
 
-function AuthProvider ({ children }: { children: ReactNode }): JSX.Element {
+export default function AuthProvider ({ children }: { children: ReactNode }): JSX.Element {
   // Initialize state variables
   const [user, setUser] = useState<IUser | null>(null)
   const [isModalOpen, setModalOpen] = useState<boolean>(false)
@@ -172,5 +172,3 @@ function AuthProvider ({ children }: { children: ReactNode }): JSX.Element {
       <AuthContext.Provider value={memoizedUser}>{children}</AuthContext.Provider>
   )
 }
-
-export default AuthProvider

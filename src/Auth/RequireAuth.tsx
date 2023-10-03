@@ -1,8 +1,8 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
-import { useAuth } from './auth'
+import { useAuth } from './AuthProvider'
 
-function RequireAuth ({ element }: { element: JSX.Element }): JSX.Element {
+export default function RequireAuth ({ element }: { element: JSX.Element }): JSX.Element {
   const { user, setModalOpen } = useAuth()
 
   if (user === null) {
@@ -11,5 +11,3 @@ function RequireAuth ({ element }: { element: JSX.Element }): JSX.Element {
   }
   return element
 }
-
-export default RequireAuth
