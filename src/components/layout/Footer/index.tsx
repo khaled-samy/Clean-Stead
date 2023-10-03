@@ -19,7 +19,7 @@ export default function Footer (): JSX.Element {
             className='p-1 ml-2'
           />
         </div>
-        <p className='text-[#7D7E82]'>
+        <p className='text-secondary'>
         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.
         </p>
       </div>
@@ -27,7 +27,7 @@ export default function Footer (): JSX.Element {
        {/* Services */}
       <div className='max-w-full md:max-w-[25%]'>
         <h2 className='font-bold text-lg'>خدماتنا</h2>
-        <ul className='text-[#7D7E82]'>
+        <ul className='text-secondary'>
           <li className='pb-2 pt-4'>تنظيف المنازل</li>
           <li className='pb-2'>التنظيف التجاري</li>
           <li className='pb-2'>تنظيف السجاد</li>
@@ -40,11 +40,11 @@ export default function Footer (): JSX.Element {
       {/* Contact */}
       <div className='max-w-full md:max-w-[25%]'>
         <h2 className='font-bold text-lg'>تواصل معنا</h2>
-        <div className='flex pt-4 pb-2 text-[#7D7E82]'>
+        <div className='flex pt-4 pb-2 text-secondary'>
           <img src={Phone} alt="phone" />
           <p>0597924632</p>
         </div>
-        <div className='flex text-[#7D7E82]'>
+        <div className='flex text-secondary'>
           <img src={Message} alt="phone" />
           <p>khaled.s.elkhudary@gmail.com</p>
         </div>
@@ -53,7 +53,7 @@ export default function Footer (): JSX.Element {
       {/* Social Media */}
       <div className='max-w-full md:max-w-[25%]'>
         <h2 className='font-bold text-lg'>تابعونا على</h2>
-        <div className='flex pt-4 pb-8 text-2xl text-[#7D7E82] gap-3'>
+        <div className='flex pt-4 pb-8 text-2xl text-secondary gap-3'>
           <AiOutlineFacebook />
           <AiOutlineTwitter />
           <AiOutlineYoutube />

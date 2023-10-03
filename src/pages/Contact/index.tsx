@@ -7,6 +7,8 @@ export default function Contact (): any {
   return (
     <Container>
     <div className='md:flex md:items-center justify-between'>
+      {/* Image Section */}
+      <ImageSection />
 
       {/* Contact Information Section */}
       <div className='w-full md:w-[48%]'>
@@ -19,8 +21,6 @@ export default function Contact (): any {
         <ContactForm />
       </div>
 
-      {/* Image Section */}
-      <ImageSection />
     </div>
     </Container>
   )

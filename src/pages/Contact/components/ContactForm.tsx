@@ -37,7 +37,7 @@ export default function ContactForm (): JSX.Element {
       <textarea id="message" placeholder='اكتب رسالتك هنا...' className="border border-solid border-1 w-[100%] h-24 p-2 rounded-xl mt-2"></textarea>
 
       {/* Submit Button */}
-      <button className='text-xl w-[150px] h-[50px] border border-solid border-3 rounded-full bg-[#00ADEE] text-white hover:border-[#00ADEE] font-bold hover:text-[#00ADEE] hover:bg-white mt-8'>ارسل</button>
+      <button className='text-xl w-[150px] h-[50px] border border-solid border-3 rounded-full bg-primary text-white hover:border-primary font-bold hover:text-primary hover:bg-white mt-8'>ارسل</button>
     </form>
   )
 }

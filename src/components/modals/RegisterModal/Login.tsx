@@ -48,8 +48,8 @@ export default function Login ({ buttonText, isPasswordShow, togglePassword }: I
               </div>
             </div>
             {isLoading
-              ? <button type='button' className='w-full border h-[56px] rounded-full mt-8 bg-white border-[#00ADEE] flex justify-center'><img src={loading} alt='loading' className='h-full text-white'/></button>
-              : <button type='submit' className='w-full bg-[#00ADEE] border text-white text-lg h-[56px] rounded-full mt-8 hover:bg-white hover:text-[#00ADEE] hover:border-[#00ADEE]'>{buttonText}</button>
+              ? <button type='button' className='w-full border h-[56px] rounded-full mt-8 bg-white border-primary flex justify-center'><img src={loading} alt='loading' className='h-full text-white'/></button>
+              : <button type='submit' className='w-full bg-primary border text-white text-lg h-[56px] rounded-full mt-8 hover:bg-white hover:text-primary hover:border-primary'>{buttonText}</button>
           }
           </form>
           </>

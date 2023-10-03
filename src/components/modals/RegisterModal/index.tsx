@@ -27,7 +27,7 @@ export default function RegisterModal ({
       <div className="fixed inset-0 bg-black bg-opacity-30 z-40"></div>
 
       {/* Register Modal */}
-      <div className="bg-white py-[30px] px-[50px] rounded-lg relative z-50">
+      <div className="bg-white md:py-[30px] md:px-[50px] py-[10px] px-[15px] rounded-lg relative z-50">
         {/* Header */}
         <div className="flex gap-8">
           <button
@@ -48,7 +48,7 @@ export default function RegisterModal ({
           <div
             className={`flex items-center justify-center w-[120px] ${
               !isHasAccount
-                ? 'text-[#00ADEE] border-b-4 border-[#00ADEE]'
+                ? 'text-primary border-b-4 border-primary'
                 : 'text-black'
             }`}
           >
@@ -64,7 +64,7 @@ export default function RegisterModal ({
           <div
             className={`flex items-center justify-center w-[120px] ${
               isHasAccount
-                ? 'text-[#00ADEE] border-b-4 border-[#00ADEE]'
+                ? 'text-primary border-b-4 border-primary'
                 : 'text-black'
             }`}
           >

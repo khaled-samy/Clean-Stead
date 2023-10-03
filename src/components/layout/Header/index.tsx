@@ -39,15 +39,15 @@ export default function Header (): JSX.Element {
 
       <div className='flex gap-2'>
         {user === null
-          ? <button onClick={handleModal} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+          ? <button onClick={handleModal} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-primary border-primary font-bold hover:text-white hover:bg-primary py-2.5 px-6">
                   دخول
                 </button>
-          : <button onClick={logout} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-[#00ADEE] border-[#00ADEE] font-bold hover:text-white hover:bg-[#00ADEE] py-2.5 px-6">
+          : <button onClick={logout} className="w-[120px] h-[50px] border border-solid border-3 rounded-full text-primary border-primary font-bold hover:text-white hover:bg-primary py-2.5 px-6">
       خروج
     </button>
       }
 
-        <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full bg-[#00ADEE] text-white hover:border-[#00ADEE] font-bold hover:text-[#00ADEE] hover:bg-white py-2.5 px-6">
+        <button className="w-[120px] h-[50px] border border-solid border-3 rounded-full bg-primary text-white hover:border-primary font-bold hover:text-primary hover:bg-white py-2.5 px-6">
           <Link to='/book'>
           احجز الآن
           </Link>
