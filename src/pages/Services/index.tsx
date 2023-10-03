@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, BriefSection } from '../../components'
+import { Container, BriefSection } from 'components'
 import ServicesSection from './components/ServicesSection'
 
 const ServicesProps = {

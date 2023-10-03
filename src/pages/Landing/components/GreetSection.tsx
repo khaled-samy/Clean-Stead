@@ -1,5 +1,5 @@
 import React from 'react'
-import GreetImg from '../../../assets/GreetSectionImg.png'
+import { GreetSectionImg } from 'assets'
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 
@@ -8,7 +8,7 @@ export default function GreetSection (): JSX.Element {
 
   const backgroundStyle = isLaptop
     ? {
-        backgroundImage: `url(${GreetImg})`,
+        backgroundImage: `url(${GreetSectionImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

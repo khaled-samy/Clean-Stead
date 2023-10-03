@@ -1,8 +1,7 @@
 import React from 'react'
-import Container from '../../components/layout/Container'
+import { Container, ImageSection } from 'components'
 import { ContactForm } from './components'
-import { ImageSection } from '../../components'
-import groub from '../../assets/Group.png'
+import { Group } from 'assets'
 
 export default function Contact (): any {
   return (
@@ -13,7 +12,7 @@ export default function Contact (): any {
       <div className='w-full md:w-[48%]'>
         <div className='flex mb-[19px]'>
           <h1 className='font-bold text-[40px] pl-2'>تواصل معنا </h1>
-          <img className='mt-4' src={groub} alt="groub" />
+          <img className='mt-4' src={Group} alt="groub" />
         </div>
 
         {/* Contact Form */}

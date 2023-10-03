@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { RegisterModal } from '../../modals'
+import { RegisterModal } from 'components'
 import { NavMobile, NavDesktop } from './components'
-import logo from '../../../assets/logo.png'
-import { useAuth } from '../../../Auth/auth'
+import { logo } from 'assets'
+import { useAuth } from 'auth'
 
 export default function Header (): JSX.Element {
   const [nav, setNav] = useState<boolean>(false)

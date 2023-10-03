@@ -1,12 +1,7 @@
 import React from 'react'
 import type IRegister from './RegisterInterface'
-import Usar from '../../../assets/User.png'
-import Message from '../../../assets/MessageIcon.png'
-import Phone from '../../../assets/Phone_duotone.png'
-import Lock from '../../../assets/Lock.png'
-import Show from '../../../assets/View_hide.png'
-import loading from '../../../assets/loading.gif'
-import { useAuth } from '../../../Auth/auth'
+import { User, MessageIcon, Phone_duotone, Lock, View_hide, loading } from 'assets'
+import { useAuth } from 'auth'
 
 export default function Signup ({ buttonText, isPasswordShow, togglePassword }: IRegister): JSX.Element {
   const { signup, errors, isLoading } = useAuth()
@@ -41,21 +36,21 @@ export default function Signup ({ buttonText, isPasswordShow, togglePassword }: 
           <div className='mt-[33px]'>
               <label htmlFor='name'>الاسم</label><br />
               <div className='relative mt-2'>
-              <img src={Usar} alt="user" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
+              <img src={User} alt="user" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
               <input required id='name' name='name' type='text' placeholder='أدخل الاسم' className='h-[56px] w-full border-2 rounded-xl p-4 pr-12 placeholder:text-[#CCD2E3]'/>
               </div>
             </div>
             <div className='mt-[17px]'>
               <label htmlFor='email'>الايميل</label><br />
               <div className='relative mt-2'>
-              <img src={Message} alt="Message" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
+              <img src={MessageIcon} alt="Message" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
               <input required id='email' name='email' type='email' placeholder='أدخل الايميل' className='h-[56px] w-full border-2 rounded-xl p-4 pr-12 placeholder:text-[#CCD2E3]'/>
               </div>
             </div>
             <div className='mt-[17px]'>
               <label htmlFor='phone'>رقم الجوال</label><br />
               <div className='relative mt-2'>
-              <img src={Phone} alt="Phone" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
+              <img src={Phone_duotone} alt="Phone" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
               <input id='phone' name='phone' type='number'placeholder='رقم الجوال' className='h-[56px] w-full border-2 rounded-xl p-4 pr-12 placeholder:text-[#CCD2E3]'/>
               </div>
             </div>
@@ -64,7 +59,7 @@ export default function Signup ({ buttonText, isPasswordShow, togglePassword }: 
               <div className='relative mt-2'>
               <img src={Lock} alt="lock" className="absolute right-4 top-1/2 transform -translate-y-1/2"/>
               <input required id='password' name='password' type={!isPasswordShow ? 'password' : 'text'} placeholder='أدخل كلمة المرور' className='h-[56px] w-full border-2 rounded-xl p-4 pr-12 placeholder:text-[#CCD2E3]'/>
-              <img src={Show} alt="Show_Hide" onClick={togglePassword} className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer" />
+              <img src={View_hide} alt="Show_Hide" onClick={togglePassword} className="absolute left-4 top-1/2 transform -translate-y-1/2 cursor-pointer" />
               </div>
             </div>
             {isLoading

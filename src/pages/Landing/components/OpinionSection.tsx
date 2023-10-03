@@ -1,6 +1,6 @@
 import React from 'react'
 import TitleSection from './sharedComponet/TitleSection'
-import Colums from '../../../assets/Colums.png'
+import { Colums } from 'assets'
 import OpinionSectionItems from '../data/opinionSectionData'
 
 export default function OpinionSection (): JSX.Element {

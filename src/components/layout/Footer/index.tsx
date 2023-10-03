@@ -1,10 +1,6 @@
 import React from 'react'
 import { AiOutlineFacebook, AiOutlineTwitter, AiOutlineYoutube, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlineGoogle } from 'react-icons/ai'
-import logo from '../../../assets/logo.png'
-import phone from '../../../assets/Phone.png'
-import message from '../../../assets/Message.png'
-import street from '../../../assets/street.png'
-import pin from '../../../assets/Pin.png'
+import { logo, Phone, Message, street, Pin } from 'assets'
 
 export default function Footer (): JSX.Element {
   return (
@@ -45,11 +41,11 @@ export default function Footer (): JSX.Element {
       <div className='max-w-full md:max-w-[25%]'>
         <h2 className='font-bold text-lg'>تواصل معنا</h2>
         <div className='flex pt-4 pb-2 text-[#7D7E82]'>
-          <img src={phone} alt="phone" />
+          <img src={Phone} alt="phone" />
           <p>0597924632</p>
         </div>
         <div className='flex text-[#7D7E82]'>
-          <img src={message} alt="phone" />
+          <img src={Message} alt="phone" />
           <p>khaled.s.elkhudary@gmail.com</p>
         </div>
       </div>
@@ -66,7 +62,7 @@ export default function Footer (): JSX.Element {
           <AiOutlineGoogle />
         </div>
         <div className='flex items-center'>
-          <img src={pin} alt="pin" className='mr-1' />
+          <img src={Pin} alt="pin" className='mr-1' />
         <img src={street} alt="street" />
         </div>
       </div>

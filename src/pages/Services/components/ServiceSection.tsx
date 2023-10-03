@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Service from '../../../assets/service.png'
+import { Service } from 'assets'
 
 interface IServiceSection {
   index: number

@@ -1,7 +1,7 @@
 import React from 'react'
 import TitleSection from './sharedComponet/TitleSection'
 import advantagesSectionItems from '../data/advantagesSectionData'
-import AdvangesImage from '../../../assets/AdvangesImage.png'
+import { AdvangesImage } from 'assets'
 
 export default function AdvantagesSection (): JSX.Element {
   return (
